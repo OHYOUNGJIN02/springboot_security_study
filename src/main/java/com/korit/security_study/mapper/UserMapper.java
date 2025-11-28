@@ -10,4 +10,5 @@ public interface UserMapper {
     Optional<User> getUserByUsername(String username);
     Optional<User> getUserByUserId(Integer userId);
     void addUser(User user);
+    int updatePassword(User user);
 }

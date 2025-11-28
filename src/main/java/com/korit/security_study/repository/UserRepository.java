@@ -30,6 +30,10 @@ public class UserRepository {
         }
         return Optional.of(user);
     }
+
+    public int updatePassword(User user) {
+        return userMapper.updatePassword(user);
+    }
 }
 
 
